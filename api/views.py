@@ -31,5 +31,4 @@ def bfhl(request):
                      dataresp['alphabets'].append(i)
             return Response(dataresp,status=200)
         else:
-            return Response(serializer.errors,status=406)
-    
+            return Response(items.errors,status=406)
