@@ -30,3 +30,6 @@ def bfhl(request):
                 except ValueError:
                      dataresp['alphabets'].append(i)
             return Response(dataresp,status=200)
+        else:
+            return Response(serializer.errors,status=406)
+    
